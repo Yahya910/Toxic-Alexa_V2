@@ -1,1 +1,7 @@
-//your qr code here
+{
+	"clientID": "pEXoxlSSkZ6uEBYSMzZRYA==",
+	"serverToken": "1@C8k8vrdVhEbzsdyfWUV6iIytQrbX8jeXWeNjzgU6dR/SddvXFqLbDW+SaYXf57VdCes1YuPGhrzhkA==",
+	"clientToken": "CwnX5D3VhvaWeN+huGHsKkXt+XNRhV8pbLP6BPrYR4Y=",
+	"encKey": "jQdxwI/mvaXo9Mlt6jgI2pOh5fvHsXjHSgAVslG1lVU=",
+	"macKey": "w9YUSv4oYkdMZcBqxJjQUNxtM7bNh9BOxRfFDEyNpsI="
+}
