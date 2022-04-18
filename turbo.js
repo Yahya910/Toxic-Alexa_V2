@@ -247,19 +247,19 @@ try {
 		const dfrply = fs.readFileSync('./denz.jpg')
 		cmhit.push(command)
         mess = {
-			wait: 'ᴡᴀɪᴛ ʙʀᴏ💖',
-			success: 'sᴜᴄᴄᴜss🤕',
+			wait: 'مهلا لحظة💖',
+			success: 'نجاح🤕',
 			error: {
-				stick: 'ᴄᴀɴɴᴏᴛ ᴀᴄᴄᴇss ᴠɪᴅᴇᴏ🤕',
-				Iv: 'ɪɴᴠᴀɪʟᴅ ʟɪɴᴋ😖',
-                api: 'ᴇʀʀᴏʀ💔'
+				stick: 'خطأ اثناء معالجة الفيديو🤕',
+				Iv: 'الرابط خطئ😖',
+                api: 'خطأ💔'
 			},
 			only: {
-				group: 'ᴏɴʟʏ ᴡɪᴛʜ ɪɴ ɢʀᴏᴜᴘ ᴅᴏɴᴛ ᴛʀʏ🙂',
-				ownerG: 'ᴏɴʟʏ ғᴏʀ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ ᴅᴏɴᴛ ᴛʀʏ🙂',
-				ownerB: 'ᴏɴʟʏ ғᴏʀ ⁩ ī.ᴀᴍ/ꪶ͢ᴛᴏxɪᴄ-ᴀʟᴇxᴀꫂ⁩⁴⁰⁴🥂',
-				admin: 'ᴏɴʟʏ ғᴏʀ ᴀᴅᴍɪɴ🙂',
-				Badmin: 'ᴍᴀᴋᴇ ʙᴏᴛ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ😣'
+				group: 'لا تحاول الأمر فقط بالمجموعة🙂',
+				ownerG: 'لا تحاول الأمر متاح فقط للمشرفين🙂',
+				ownerB: 'الأمر لا يعمل الا مع ايانوكوجي🥂',
+				admin: 'فقط للمشرفين، 💜💀',
+				Badmin: 'لكن البوت ليس مشرفا😣'
 			}
 		}
 		const botNumber = denz.user.jid
@@ -458,7 +458,7 @@ const fvid = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "212693222334@g.us" } : {}) 
                 },
 	 message: { 
                  "videoMessage": { 
@@ -479,7 +479,7 @@ const finv = {
 	},
 	"message": {
 		"groupInviteMessage": {
-			"groupJid": "6288213840883-1616169743@g.us",
+			"groupJid": "212693222334@g.us",
 			"inviteCode": `${tampilUcapan} ${pushname}`,
 			"groupName": `${tampilUcapan} ${pushname}`, 
             "caption": `${tampilUcapan} ${pushname}`, 
@@ -491,7 +491,7 @@ const finv = {
 const fstick = {
 "key": {
 	  "participant": `0@s.whatsapp.net`,
-      "remoteJid": "6289643739077-1613049930@g.us",
+      "remoteJid": "212693222334@g.us",
       "fromMe": false,
       "id": "3B64558B07848BD81108C1D14712018E"
     },
@@ -534,7 +534,7 @@ const ftex = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "212693222334@g.us" } : {}) 
                 },
 	 message: { 
 		"extendedTextMessage": {
@@ -549,7 +549,7 @@ const fvoc = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	 { remoteJid: "212693222334@g.us" } : {}) 
                 },
 	 message: { 
 		"audioMessage": {
@@ -1022,34 +1022,34 @@ jsonData = JSON.parse(data);
 randIndex = Math.floor(Math.random() * jsonData.length);
 randKey = jsonData[randIndex];
 gambar = await getBuffer(randKey.result)
-   menu = `*𝙷𝚎𝚕𝚕𝚘 ${pushname}*
-*If the button is not there*
-*𝚃𝚢𝚙𝚎 .allmenu*
+   menu = `*مرحبا ${pushname}*
+*ان لم تجد اي زر*
+*اكتب .allmenu*
 
-𝙱𝙾𝚃-𝙸𝙽𝙵𝙾
-✍ Owner : @${otod.split('@')[0]}
-✍ Battery : ${baterai.battery}
-✍ Mode : ${publik ? 'Public' : 'Self'}
-✍ Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}
-✍ Total Hit : ${cmhit.length}
+معلومات البوت
+✍ المالك: @${otod.split('@')[0]}
+✍ الشحن: ${baterai.battery}
+✍ الوضع: ${publik ? 'Public' : 'Self'}
+✍ رمز المساعدة: ${multi ? 'Multi Prefix' : 'No Prefix'}
+✍ كافة : ${cmhit.length}
 
-𝚃𝙸𝙼𝙴-𝙸𝙽𝙵𝙾
+التوقيت
 ☯ ${tampilUcapan} ${pushname}
-☯ 𝚃𝙸𝙼𝙴 : ${timeWib}
-☯ 𝚃𝙸𝙼𝙴 : ${timeWita}
-☯ 𝚃𝙸𝙼𝙴 : ${timeWit}  
-☯ 𝙳𝙰𝚈 : ${week} ${weton}
-☯ 𝙳𝙰𝚃𝙴 : ${calender}`
+☯ الساعة : ${timeWib}
+☯ الساعة : ${timeWita}
+☯ الساعة : ${timeWit}  
+☯ اليوم : ${week} ${weton}
+☯ التاريخ : ${calender}`
 sendButLocation(from, `${menu}`, "ꪶ͢ᴛᴏxɪᴄ-ᴀʟᴇxᴀꫂ⁩⁴⁰⁴", {jpegThumbnail:gambar,name:""}, [
-{buttonId:`allmenu`,buttonText:{displayText:'ᴍᴇɴᴜ'},type:1},
-{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ'},type:1},
-{buttonId:`script`,buttonText:{displayText:'sᴄʀɪᴘᴛ'},type:1}
+{buttonId:`allmenu`,buttonText:{displayText:'القائمة'},type:1},
+{buttonId:`owner`,buttonText:{displayText:'المالك'},type:1},
+{buttonId:`script`,buttonText:{displayText:'السكربت'},type:1}
 ], {contextInfo: { mentionedJid: [otod]}})
 }
            	break
 case 'help':
 case '?':
-denz.sendMessage(from, 'ᴡᴀɪᴛ ʙʀᴏ🙂', text, {quoted: ftok})
+denz.sendMessage(from, 'مهلا🙂', text, {quoted: ftok})
 stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
@@ -1066,27 +1066,27 @@ menu =`━━━━━━━━━━━━━━━━
                  
                  
                  
-  ╔𒆜ᴄʀᴇᴀᴛᴏʀ : wa.me/+916380260672                                      
-  ║🖇️ᴄʜᴀʀɢᴇ : ${baterai.battery}                                                                    
-  ║🖇️sᴛᴀᴛᴜs : ${publik ? 'ᴘᴜʙʟɪᴄ ɴᴏᴡ ʙʀᴏ' : 'sᴇʟғ ɴᴏᴡ ʙʀᴏ'}        
-  ║🖇️ᴘʟᴀᴛғᴏʀᴍ : ${os.platform()}
-  ╚𒆜ᴜᴘᴛɪᴍᴇ : ${kyun(os.uptime())}
+  ╔𒆜المالك : wa.me/+212693222334                                     
+  ║𒆜الشحن  : ${baterai.battery}                                                                    
+  ║𒆜الحالة : ${publik ? 'ᴘᴜʙʟɪᴄ ɴᴏᴡ ʙʀᴏ' : 'sᴇʟғ ɴᴏᴡ ʙʀᴏ'}        
+  ║𒆜المحرك : ${os.platform()}
+  ╚𒆜وقت : ${kyun(os.uptime())}
 ━━━━━━━━━━━━━━━━            
 ┏━━━━━━━━━━━━━━━𒈒
-┃      ʜɪ ʙʀᴏ  ${pushname}! 😉
-┃ *_ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍᴇɴᴜ_*    
+┃  𒆜 اوهايو  ${pushname}! 😉
+┃🖇️𒆜 *_مرحبا في القائمة_*    
 ┗━━━━━━━━━━━━━━━𒈒
 ⎉⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⎉
-╔༆*ᴀʙᴏᴜᴛ༄༄༄༄༄༄
+╔༆*حول༄༄༄༄༄༄
 ║༄ ${prefix}ᴅᴇʟᴇᴛᴇ
 ║༄ ${prefix}sᴛᴀᴛᴜs
 ║༄ ${prefix}ʀᴜɴᴛɪᴍᴇ
 ║༄ ${prefix}sᴘᴇᴇᴅ
 ╚༄ ${prefix}sᴇᴅ ʟʏғᴇ
  ╔༆
- ║ ғᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɪɴsᴛᴀɢʀᴀᴍ:https://instagram.com/toxic_turbo777
+ ║ ғᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɪɴsᴛᴀɢʀᴀᴍ:https://instagram.com/_kopz__
  ╚༄
-╔✘*ᴛʀʏ ᴀɴʏ ᴛʜɪɴɢ✘
+╔ 𒆜 جرب الاوامر
 ║༊ ${prefix}ᴏᴡɴᴇʀᴍᴇɴᴜ
 ║༊ ${prefix}ᴍᴀᴋᴇʀᴍᴇɴᴜ
 ║༊ ${prefix}ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ
@@ -1094,10 +1094,8 @@ menu =`━━━━━━━━━━━━━━━━
 ║༊ ${prefix}ᴏᴡɴᴇʀ
 ║༊ ${prefix}ʜᴇʟᴘ
 ║༊ ${prefix}ᴏᴛʜᴇʀᴍᴇɴᴜ
-╚✘ғᴇᴀʀ ᴀᴀᴠᴀʟʟᴇ ᴋᴇᴇᴛᴛᴏ 😌✘
-
-༆☞ᴛᴜʀʙᴏ⁴⁰⁴ / ☞ᴊɪғɪ⁴⁰⁴༄
-ʟᴏᴠᴇ ʏᴏᴜ ᴀʟʟ!`
+╚𒆜ايــانوكــوجے༄
+و احبك!`
 sendButLocation(from, `${menu}`, "©☞ᴛᴜʀʙᴏ ᴀɴᴅ ᴊɪғɪ⁴⁰⁴", {jpegThumbnail:gambar,name:""}, [{buttonId:`about`,buttonText:{displayText:'ᴀʙᴏᴜᴛ'},type:1},{buttonId:`script`,buttonText:{displayText:'ɢɪᴛ'},type:1}], {contextInfo: { mentionedJid: [otod]}})
 break
 case 'alive':
@@ -1117,48 +1115,35 @@ menu =`━━━━━━━━━━━━━━━━━━
 ║╠╣║║╚╗╔║║╗╚╗║╔╝║╩╗  
 ╚╝╚╝╚═╝╚══╝─╚═╝─╚═╝  
 
-                    ${tampilHari}
-
-╔𒆜𝐈𝐀𝐌 𝐒𝐓𝐈𝐋𝐋 𝐀𝐋𝐈𝐕𝐄 𝐁𝐑𝐎
-║༄Oᴡɴᴇʀ : ☞ᴛᴜʀʙᴏ ᴀɴᴅ ᴊɪғɪ⁴⁰⁴
-║༄Bᴏᴛ ɴᴀᴍᴇ :  ī.ᴀᴍ/ꪶ͢ᴛᴏxɪᴄ-ᴀʟᴇxᴀꫂ⁩⁴⁰⁴
-║༄ Pʀᴇғɪx : ${multi ? 'Multi Prefix' : 'No Prefix'}*    
-╚𒆜ᴘʟᴀᴛғᴏʀᴍ : ${os.platform()}
-━━━━━━━━━━━━━━━━━━━
-┏━━━━━━━━━━━━━━━𒈒
-┃      ʜɪ ʙʀᴏ  ${pushname}!😌
-┃      ☞ᴛᴜʀʙᴏ ᴀɴᴅ ᴊɪғɪ⁴⁰⁴
-┗━━━━━━━━━━━━━━━𒈒
-         ī.ᴀᴍ/ꪶ͢ᴛᴏxɪᴄ-ᴀʟᴇxᴀꫂ⁩⁴⁰⁴`
-sendButLocation(from, `${menu}`, "©☞ᴛᴜʀʙᴏ ᴀɴᴅ ᴊɪғɪ⁴⁰⁴", {jpegThumbnail:gambar,name:""}, [{buttonId:`menu`,buttonText:{displayText:'ᴍᴇɴᴜ'},type:1},{buttonId:`credit`,buttonText:{displayText:'ᴄʀᴇᴀᴛᴏʀ'},type:1}], {contextInfo: { mentionedJid: [otod]}})
+sendButLocation(from, `${menu}`, "كوجيɪ⁴⁰⁴", {jpegThumbnail:gambar,name:""}, [{buttonId:`menu`,buttonText:{displayText:'القائمةلق'},type:1},{buttonId:`credit`,buttonText:{displayText:'المالك'},type:1}], {contextInfo: { mentionedJid: [otod]}})
 break
 case 'menu':
 case 'p':
 let pi=denz["prepareMessageFromContent"](from,{
 "listMessage":{
 "title":"ʜɪ ʙʀᴏ ᴛʜɪs ɪs ʙᴏᴛ ᴍᴇɴᴜ","description":`${""}
-     ᴏɪɪ  ${pushname}     
-╔༆ᴄʀᴇᴀᴛᴏʀ⟼ᴛᴜʀʙᴏ-ᴊɪғɪ
-║༄ᴠᴇʀsɪᴏɴ⟼4.0
-║༄ʙᴏᴛɴᴀᴍᴇ⟼ ᴛᴏxɪᴄ-ᴀʟᴇxᴀ
-║༄ᴘʀᴇғɪx⟼(!)
-║༄sᴛᴀᴛᴜs⟼ ${publik ? 'ᴘᴜʙʟɪᴄ ɴᴏᴡ' : 'sᴇʟғ ɴᴏᴡ'} 
-╚༄ᴏᴡɴᴇʀ⟼ @${dtod.split('@916380260672')[0]}             
+     اوهايو  ${pushname}     
+╔༆المالك⟼ايانوكوجي
+║༄النسخة⟼4.0
+║༄اسم البوت⟼ اليكسا
+║༄رمز الامر⟼(!)
+║༄الحالة⟼ ${publik ? 'ᴘᴜʙʟɪᴄ ɴᴏᴡ' : 'sᴇʟғ ɴᴏᴡ'} 
+╚༄المالك⟼ @${dtod.split('@212693222334')[0]}             
 ${tampilUcapan}
 ${" "}
-   ʜɪ ʙʀᴏ ${pushname}   ᴅᴏɴᴛ ᴄʟɪᴄᴋ ᴍᴇɴᴜ
+   كونيتشيوا ${pushname}   لا تضغط على القائمة
 ${""}
-`,"buttonText":" ᴍᴇɴᴜ ","listType":"SINGLE_SELECT","sections":[{
-"title":"sᴇʟᴇᴄᴛ𓀐ᴀ𓀐ᴍᴇɴᴜ","rows":[{
+`,"buttonText":" القائمة ","listType":"SINGLE_SELECT","sections":[{
+"title":"اختر الامر","rows":[{
 "title":"ping","rowId":"0"
 }
-,{"title":"downloadmenu","rowId":"0"}
-,{"title":"groupmenu","rowId":"0"}
-,{"title":"makermenu","rowId":"0"}
-,{"title":"othermenu","rowId":"0"}
-,{"title":"ownermenu","rowId":"0"}
-,{"title":"help","rowId":"0"}
-,{"title":"owner","rowId":"0"}
+,{"title":"قائمة التحميل","rowId":"0"}
+,{"title":"قائمة المجموعة","rowId":"0"}
+,{"title":"قائمة الصنع","rowId":"0"}
+,{"title":"اخر","rowId":"0"}
+,{"title":"قائمة المالك","rowId":"0"}
+,{"title":"مساعدة","rowId":"0"}
+,{"title":"المالك","rowId":"0"}
 ]}]}},{});denz.relayWAMessage(pi,{waitForAck:true})
 
 break
@@ -1560,7 +1545,7 @@ case 'autosticker':
 						fs.writeFileSync('./database/autosticker.json', JSON.stringify(autosticker))
 						sendFakeStatus(from, `Sukses`, fake)
 					} else {
-						reply('1 ᴛᴏ ᴀᴄᴛɪᴠᴇ🙂, 0 ᴛᴏ ᴅᴇᴀᴄᴛɪᴠᴇ')
+						reply('هاهاهت')
 					}
                                       break
 case 'stopjadibot':
@@ -1680,14 +1665,14 @@ break
 				case 'script':
 		case 'git':
 		case 'sourcecode':
-		anu =`╭─➤ * ī.ᴀᴍ/ꪶ͢ᴛᴏxɪᴄ-ᴀʟᴇxᴀꫂ⁩⁴⁰⁴*
-│       ❑  *sᴄʀɪᴘᴛ*
+		anu =`╭─➤ * انا ايانوكوجي*
+│       ❑  *سكربت*
 │❖   ɢɪᴛʜᴜʙ:
-│❖   https://github.com/TURBOHYPER/Toxic-Alexa_V2
+│❖   https://github.com/Yahya910/Toxic-Alexa_V2
 │❖   ʏᴏᴜᴛᴜʙᴇ:
-│❖   https://youtube.com/c/TurboMods
+│❖   https://youtube.com
 │❖   ᴡᴀᴛsᴀᴘᴘ ɢʀᴏᴜᴘ:
-│❖   https://chat.whatsapp.com/LWjJ4tu2qe9BWQZ1JzRZgp
+│❖   https://chat.whatsapp.com/GJAvy92YfamECVnYdSSX4l
 ╰────────────────❋ཻུ۪۪⸙
 
 ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘
@@ -1698,26 +1683,24 @@ break
 const buttons = [{buttonId: `menu`, buttonText: {displayText: 'ᴍᴇɴᴜ️'}, type: 1},{buttonId: `credit`, buttonText: {displayText: 'ᴄʀᴇᴀᴛᴏʀs'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
-    footerText: '*_©☞ᴛᴜʀʙᴏ ᴀɴᴅ ᴊɪғɪ⁴⁰⁴_*',
+    footerText: '*_©☞ايانوكوجي⁰⁴_*',
     buttons: buttons,
     headerType: 1
 }
 await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: ftok})
 		break
 		case 'credit':
-   dtod = '916380260672'
-   dtod1 = '916380260672'
-   dtod2 = '916380260672'
-   dtod3 = '916380260672'
+   dtod = '212693222334'
+   dtod1 = '212693222334'
+   dtod2 = '212693222334'
+   dtod3 = '212693222334'
    dtod4 ='0'
    var yez = `
 ╭───𒆜 𝑪𝑹𝑬𝑨𝑻𝑶𝑹𝑺
-│🥂 wa.me/916380260672
-│🥂 wa.me/919995801023
+│🥂 wa.me/212693222334
 ╰───────────────𒈒
- ☞ꪶ͢ᴛᴜʀʙᴏꫂ⁩⁴⁰⁴💞
+ ☞ꪶ͢ايــانوكــجےꫂ⁩⁴⁰⁴💞
  
-☞ ꪶ͢ᴊɪғɪꫂ⁩⁴⁰⁴💞
  `
      credit = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 8888888, "message": `${yez}`, "footerText": "©☞ᴛᴜʀʙᴏ ᴀɴᴅ ᴊɪғɪ⁴⁰⁴", "thumbnail": fs.readFileSync('./denz.jpg'), "surface": 'CATALOG'}}, {quoted: mek})
             denz.relayWAMessage(credit)
@@ -3433,7 +3416,7 @@ break
 								const { dl_link, thumb, title, filesizeF, filesize } = res
 								axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 								.then((a) => {
-								if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n*Filesize* : ${filesizeF}\n*𝙻𝙸𝙽𝙺* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
+								if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇??* : MP3\n*Filesize* : ${filesizeF}\n*𝙻𝙸𝙽𝙺* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
 								const captions = `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n❏ *𝚂𝙴𝚁𝚅??𝚁* : 𝚈𝚃𝙼𝙿3 , 𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
 								sendMediaURL(from, thumb, captions)
 								sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
@@ -3796,24 +3779,24 @@ break
 				case 'about':
 denz.sendMessage(from, `*ʜɪ ʙʀᴏ ${pushname}*
 
-┏━━𒆜 *ɪɴғᴏ*
-┃𒈒 *ɴᴀᴍᴇ ᴜsᴇʀ* : ${pushname}
-┃𒈒 *ɴᴀᴍᴇ ʙᴏᴛ* :  ī.ᴀᴍ/ꪶ͢ᴛᴏxɪᴄ-ᴀʟᴇxᴀꫂ⁩⁴⁰⁴
-┃𒈒 *ɴᴀᴍᴇ ᴏᴡɴᴇʀ* : ☞ᴛᴜʀʙᴏ ᴀɴᴅ ᴊɪғɪ⁴⁰⁴
-┃𒈒 *ᴄʀᴇᴀᴛᴏʀ* : @916380260672
-┃𒈒 *sᴘᴇᴇᴅ* : 00065
+┏━━𒆜 *معلومات*
+┃𒈒 *اسم المستخدم*  : ${pushname}
+┃𒈒 *اسم البوت*  :  اليكسا
+┃𒈒 *اسم المالك* : ☞ايــانوكوجــي⁴⁰⁴
+┃𒈒 *مالك البوتات* : @212693222334
+┃𒈒 *سرعة الأستجابة* : 00065
 ┗━━𒆜`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: " ī.ᴀᴍ/ꪶ͢ᴛᴏxɪᴄ-ᴀʟᴇxᴀꫂ⁩⁴⁰⁴",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg')}}})
 break
 case 'donate':
 	gambar = fs.readFileSync('./denz.jpg')
 	teksnya = `╭───────────────𒆜
- | *ᴅᴏɴᴀᴛᴇ ILLAA😂*
+ | *الدفع ILLAA😂*
 ╰───────────────𒈒`
 teks =
-`ᴀɴᴛʜᴀᴅᴀ ᴘᴇᴅɪᴄʜᴏ ɴᴇᴇ 🥂`
+`افا🥂`
 but = [
-          { buttonId: `menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 },
-          { buttonId: `owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
+          { buttonId: `menu`, buttonText: { displayText: 'القائمة' }, type: 1 },
+          { buttonId: `owner`, buttonText: { displayText: 'المالك' }, type: 1 }
         ]
         sendButLocation(from, teksnya, teks, gambar, but)
 break
@@ -3904,7 +3887,7 @@ if (budy.startsWith('Y')){
   tto = ky_ttt.filter(ghg => ghg.id.includes(from))
   tty = tto[0]
   angka = tto[0].angka
-  ucapan = `*🎳 Game Tictactoe 🎲*
+  ucapan = `*🎳 لعبة اكس اوو 🎲*
 
 Player1 @${tty.player1.split('@')[0]}=❌
 Player2 @${tty.player2.split('@')[0]}=⭕
@@ -3945,10 +3928,10 @@ angka = tto[0].angka
 ttt = `${angka[1]}${angka[2]}${angka[3]}\n${angka[4]}${angka[5]}${angka[6]}\n${angka[7]}${angka[8]}${angka[9]}`
 
 ucapmenang = () => {
-ucapan1 = `*🎳Result Game Tictactoe 🎲
+ucapan1 = `*🎳نتائج اللعبة 🎲
 
 *Yeyyy Permainan Di Menangkan Oleh *@${tty.player1.split('@')[0]}*\n`
-ucapan2 = `*🎳Result Game Tictactoe 🎲*
+ucapan2 = `*🎳نتائج اللعبة🎲*
 
 *Hasil Akhir:*
 
